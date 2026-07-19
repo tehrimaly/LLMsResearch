@@ -27,11 +27,10 @@ Usage:
 from __future__ import annotations
 import sys
 
-# ---------------------------------------------------------------------------
 # 1. Define the text samples you want to compare.
 #    Add your own here -- e.g. an Urdu/English code-switched paragraph is a
 #    genuinely interesting, under-explored comparison.
-# ---------------------------------------------------------------------------
+
 SAMPLES = {
     "english_prose": (
         "The quick brown fox jumps over the lazy dog. Large language models "
@@ -84,6 +83,7 @@ def count_hf_tokenizer(text: str, model_id: str) -> int | None:
 
 # Map of "friendly name" -> (loader function, argument)
 # Add/remove rows here as you get access to more tokenizers.
+
 TOKENIZERS = {
     "GPT (tiktoken o200k_base)": lambda t: count_tiktoken(t, "o200k_base"),
     "GPT (tiktoken cl100k_base, legacy)": lambda t: count_tiktoken(t, "cl100k_base"),
