@@ -1,8 +1,8 @@
-# Prompt Battery — Same Prompts, Every Model
+# Prompt Battery Same Prompts, Every Model
 
 Paste each prompt below, unmodified, into each model you're testing (ChatGPT, Claude, Gemini,
 DeepSeek, etc. via their chat UIs or APIs). Log outputs in `experiments/experiment_log_template.md`.
-Run each prompt 2 times per model minimum — LLM output is non-deterministic.
+Run each prompt 2 times per model minimum LLM output is non-deterministic.
 
 Where the platform allows it, keep temperature/reasoning-effort settings consistent across models —
 note in your log exactly what settings you used, since "default" settings differ per provider.
@@ -46,7 +46,7 @@ compression, and whether the summary reads naturally vs. sounding like a listicl
 ## 5. Creativity (constrained creative writing)
 
 > Write a 150-word short story about a power outage in an apartment building, told entirely through
-> overheard dialogue — no narration, no description, just what people say to each other.
+> overheard dialogue no narration, no description, just what people say to each other.
 
 **What to score:** did it actually follow the "no narration" constraint, or slip into prose
 description? Voice distinctiveness between speakers.
@@ -57,7 +57,7 @@ description? Voice distinctiveness between speakers.
 > a question that invites them to ask more.
 
 **What to score:** this deliberately stacks four constraints (audience level, word limit, no
-metaphors, ending format) — models vary a lot in how many of the four they actually satisfy
+metaphors, ending format) models vary a lot in how many of the four they actually satisfy
 simultaneously.
 
 ## 7. Tokenization-adjacent: multilingual/code-switch handling
