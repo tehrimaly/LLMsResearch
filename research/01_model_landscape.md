@@ -20,7 +20,7 @@ up through `low/medium/high/xhigh/max` you pay more compute for deeper reasoning
 - **License:** proprietary; the older **GPT-OSS** line is OpenAI's one open-weight offering, aimed at
   self-hosted/data-sovereignty use cases
 
-## 2. Anthropic — Claude family
+## 2. Anthropic Claude family
 
 **Current lineup:** **Claude Sonnet 5** (balanced, this is what's answering you right now), **Claude
 Opus 4.8** (highest capability), **Claude Haiku 4.5** (fast/cheap), and the new **Mythos-tier**
@@ -103,7 +103,7 @@ pricing in the entire market, ~$0.14/M input).
 - **Positioning:** the "frontier-quality-at-a-fraction-of-the-cost" open-weight option; a serious pick
   wherever budget or self-hosting matters more than having the single highest benchmark score
 
-## 8. Alibaba — Qwen family
+## 8. Alibaba Qwen family
 
 **Current lineup:** **Qwen 3.5 / Qwen 3.7 Max** (broad multilingual coverage 200+ languages/dialects,
 the widest of any model family surveyed here), **Qwen3-Coder-Next** (small, 80B-total/3B-active,
@@ -130,14 +130,14 @@ Apache 2.0, built specifically for efficient self-hosted coding agents).
 | | Closed (GPT, Claude, Gemini, Grok) | Open-weight (Llama, Mistral, DeepSeek, Qwen, Kimi, GLM, MiMo) |
 |---|---|---|
 | Access | API/app only, usage-based billing | Download + self-host, or hosted API from any provider |
-| Data residency | Vendor's infrastructure | Your infrastructure — relevant for compliance-heavy work |
+| Data residency | Vendor's infrastructure | Your infrastructure  relevant for compliance-heavy work |
 | Cost model | Per-token, can be high at frontier tier | Often per-token *or* hardware-only if self-hosted |
 | Typical strength | Highest ceiling on hardest reasoning/agentic benchmarks | Best cost-to-capability ratio; catching up fast |
 | Fine-tuning | Usually not possible (or very limited) | Fully fine-tunable |
 
 The practical 2026 pattern most teams land on: **a closed frontier model for the hardest tasks, a
 cheap open-weight API for high-volume work, and a self-hosted small model for privacy-sensitive or
-offline cases** — a portfolio, not a single winner.
+offline cases** a portfolio, not a single winner.
 
 ---
 
