@@ -1,4 +1,4 @@
-# LLM Research — Deep Dive on Major Language Models (2026)
+# LLM Research Deep Dive on Major Language Models (2026)
 
 Independent research project comparing today's major LLM families: architecture, tokenization,
 context windows, task-specific strengths, and hands-on usage. Built as part of an ML engineering
@@ -43,5 +43,5 @@ This repo tries to build intuition for those questions, not just repeat vendor m
 
 ## Status
 
-Research current as of **July 2026**. Model landscape moves fast — check the "last verified" date at the
+Research current as of **July 2026**. Model landscape moves fast check the "last verified" date at the
 top of each file before citing numbers from here in anything formal.
