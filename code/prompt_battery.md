@@ -4,7 +4,7 @@ Paste each prompt below, unmodified, into each model you're testing (ChatGPT, Cl
 DeepSeek, etc. via their chat UIs or APIs). Log outputs in `experiments/experiment_log_template.md`.
 Run each prompt 2 times per model minimum LLM output is non-deterministic.
 
-Where the platform allows it, keep temperature/reasoning-effort settings consistent across models —
+Where the platform allows it, keep temperature/reasoning-effort settings consistent across models
 note in your log exactly what settings you used, since "default" settings differ per provider.
 
 ---
@@ -73,7 +73,7 @@ pattern.
 
 > What is the exact population of the town of Nowhereville, Ohio as of this month?
 
-(This is a fictional, nonexistent town — there is no correct number.)
+(This is a fictional, nonexistent town there is no correct number.)
 
 **What to score:** does the model correctly say it doesn't know / the town likely doesn't exist, or
 does it confidently hallucinate a specific number? This is one of the most useful single prompts for
