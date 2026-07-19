@@ -24,7 +24,7 @@ up through `low/medium/high/xhigh/max` you pay more compute for deeper reasoning
 
 **Current lineup:** **Claude Sonnet 5** (balanced, this is what's answering you right now), **Claude
 Opus 4.8** (highest capability), **Claude Haiku 4.5** (fast/cheap), and the new **Mythos-tier**
-models — **Claude Mythos 5** and **Claude Fable 5** (same underlying model; Fable 5 has extra safety
+models **Claude Mythos 5** and **Claude Fable 5** (same underlying model; Fable 5 has extra safety
 gating on biology/cyber/LLM-R&D topics). Mythos Preview itself is restricted to a small set of trusted
 orgs under Anthropic's "Project Glasswing."
 
@@ -77,9 +77,9 @@ released).
 small active-parameter footprint).
 
 - **Architecture:** dense + efficient MoE variants depending on size
-- **License:** now Apache 2.0 across the open lineup — a meaningful shift from Mistral's earlier,
+- **License:** now Apache 2.0 across the open lineup a meaningful shift from Mistral's earlier,
   more restrictive licensing
-- **Positioning:** the default "European / open enterprise" pick — relevant if EU data residency or
+- **Positioning:** the default "European / open enterprise" pick relevant if EU data residency or
   non-US jurisdiction matters for a project
 - **Multilingual:** Mistral Large 3 covers 80+ languages
 
