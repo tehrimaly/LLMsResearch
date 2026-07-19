@@ -1,16 +1,16 @@
-# 01 — The Model Landscape (last verified: July 2026)
+# 01 The Model Landscape (last verified: July 2026)
 
 A field guide to every major LLM family currently in production use, grouped by lab. For each: who
 builds it, how it's built (architecture), how big it is, how it's licensed, and what it's for.
 
 ---
 
-## 1. OpenAI — GPT family
+## 1. OpenAI GPT family
 
-**Current flagship:** GPT-5.6, shipped as three sizes from one family — **Sol** (largest, flagship
+**Current flagship:** GPT-5.6, shipped as three sizes from one family **Sol** (largest, flagship
 reasoning/coding), **Terra** (balanced cost/intelligence), **Luna** (cheapest, high-volume). All three
 share a knowledge cutoff and a ~1M-token context window, with reasoning effort selectable from `none`
-up through `low/medium/high/xhigh/max` — you pay more compute for deeper reasoning on the same model.
+up through `low/medium/high/xhigh/max` you pay more compute for deeper reasoning on the same model.
 
 - **Architecture:** dense/MoE transformer (OpenAI doesn't publish exact parameter counts or MoE
   routing details for GPT-5.x)
@@ -31,12 +31,12 @@ orgs under Anthropic's "Project Glasswing."
 - **Architecture:** dense transformer, details not public
 - **Context window:** up to 1M tokens on Opus 4.8-and-later and the Mythos-tier models; a new tokenizer
   introduced around Opus 4.7 can produce meaningfully more tokens for the same text than older Claude
-  models — worth accounting for when comparing costs across Claude versions
+  models worth accounting for when comparing costs across Claude versions
 - **Access:** closed weights, via API/Claude Platform, claude.ai, Claude Code, Claude Cowork, and
   Chrome/Excel/PowerPoint agent integrations
 - **License:** proprietary
 
-## 3. Google — Gemini family
+## 3. Google Gemini family
 
 **Current lineup:** **Gemini 3.1 Pro** (flagship reasoning, 1M context, four thinking levels),
 **Gemini 3.5 Flash** (newer, optimized for agentic/coding work, beats 3.1 Pro on some coding
@@ -49,17 +49,17 @@ benchmarks at lower cost), **Gemini 3.1 Flash-Lite** (budget tier), and **Gemini
 - **Access:** Google AI Studio / Vertex AI API, Gemini app, Google Workspace bundling
 - **License:** proprietary
 
-## 4. Meta — Llama family
+## 4. Meta Llama family
 
 **Current lineup:** **Llama 4 Scout** (17B active / 109B total params, MoE, 16 experts, headline
-**10M-token context window** — the largest of any open-weight model), **Llama 4 Maverick** (400B
+**10M-token context window** the largest of any open-weight model), **Llama 4 Maverick** (400B
 total / 17B active, stronger benchmarks, still huge context), and **Llama 4 Behemoth** (Meta's
-largest model, used internally as a teacher model to distill Scout/Maverick — never publicly
+largest model, used internally as a teacher model to distill Scout/Maverick never publicly
 released).
 
 - **Architecture:** Meta's first Mixture-of-Experts generation; natively multimodal, trained on ~200
   languages
-- **Context window:** 10M tokens (Scout) — but independent testing shows effective recall degrades
+- **Context window:** 10M tokens (Scout) but independent testing shows effective recall degrades
   well before the advertised limit, so it's most reliable for retrieval-style lookups in huge
   documents rather than synthesizing the entire window at once
 - **Access:** open weights (downloadable, self-hostable via Ollama/vLLM/etc.) or hosted via cloud
@@ -83,9 +83,9 @@ small active-parameter footprint).
   non-US jurisdiction matters for a project
 - **Multilingual:** Mistral Large 3 covers 80+ languages
 
-## 6. xAI — Grok family
+## 6. xAI Grok family
 
-**Current flagship:** **Grok 4.3** — tends to lead pure reasoning benchmarks (logic, hard science,
+**Current flagship:** **Grok 4.3** tends to lead pure reasoning benchmarks (logic, hard science,
 math-heavy work).
 
 - **Access:** the strongest capability tier sits behind the SuperGrok Heavy subscription; the API
@@ -95,17 +95,17 @@ math-heavy work).
 ## 7. DeepSeek
 
 **Current lineup:** **DeepSeek V4 Pro** (frontier-adjacent quality, leads on competitive coding among
-open-weight models) and **DeepSeek V4 Flash** (extremely cheap — among the lowest per-token API
+open-weight models) and **DeepSeek V4 Flash** (extremely cheap among the lowest per-token API
 pricing in the entire market, ~$0.14/M input).
 
-- **License:** MIT — fully open, including for commercial and air-gapped/compliance-sensitive
+- **License:** MIT fully open, including for commercial and air-gapped/compliance-sensitive
   deployments
 - **Positioning:** the "frontier-quality-at-a-fraction-of-the-cost" open-weight option; a serious pick
   wherever budget or self-hosting matters more than having the single highest benchmark score
 
 ## 8. Alibaba — Qwen family
 
-**Current lineup:** **Qwen 3.5 / Qwen 3.7 Max** (broad multilingual coverage — 200+ languages/dialects,
+**Current lineup:** **Qwen 3.5 / Qwen 3.7 Max** (broad multilingual coverage 200+ languages/dialects,
 the widest of any model family surveyed here), **Qwen3-Coder-Next** (small, 80B-total/3B-active,
 Apache 2.0, built specifically for efficient self-hosted coding agents).
 
@@ -116,11 +116,11 @@ Apache 2.0, built specifically for efficient self-hosted coding agents).
 
 ## 9. Other open-weight names worth knowing
 
-- **Kimi K2.6** (Moonshot AI) — native multimodal (text/image/video), 256K context, strong agentic
+- **Kimi K2.6** (Moonshot AI) native multimodal (text/image/video), 256K context, strong agentic
   tool-use claims
-- **GLM-5.2** (Z.ai) — long-horizon coding focus, 1M context
-- **MiniMax M3** — competitive on SWE-bench-style coding benchmarks at low cost
-- **Xiaomi MiMo** — the edge-deployment specialist; small enough (down to ~3.5GB at INT4) to run on
+- **GLM-5.2** (Z.ai) long-horizon coding focus, 1M context
+- **MiniMax M3** competitive on SWE-bench-style coding benchmarks at low cost
+- **Xiaomi MiMo** the edge-deployment specialist; small enough (down to ~3.5GB at INT4) to run on
   phones and embedded NPUs, which none of the flagship families target
 
 ---
